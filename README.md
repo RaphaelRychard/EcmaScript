@@ -1,8 +1,5 @@
-# **EcmaScript**
-
-### **Curso Basico de EcmaScript** :book:
-
-- Introdução
+# **EcmaScript** :book:
+- **Curso Basico de EcmaScript** 
 - Cursando atualmente!
 - Aprendendo EcmaScript6
 

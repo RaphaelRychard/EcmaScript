@@ -1,2 +1,2 @@
 # EcmaScript
-* Curso Basico de EcamaScript
+* Curso Basico de EcamaScript 2.0

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: lightslategray;
+            width: 600px;
+            padding: 20px;
+            text-align: left;
+            margin: auto;
+            font-family: sans-serif;
+        }
+        h1{
+            color: white;
+        }
+        h2{
+            font-size: 21px;
+            color: white;
+        }
+        p{
+            color: rgb(130, 130, 130);
+            font-size: 18px;
+        
+        }
+    </style>
+</head>
+<body>  
+    <h2>O meu Nome tem qunatas letras?</h2>
+    <p>
+   
+    </p>
+    <script>
+        var nome = prompt('Qual é seu nome? ')
+        document.write(`Seu nome é <strong>${nome}</strong><br>`) 
+        document.write(`Seu nome tem <strong>${nome.length}</strong> letras.<br>`)
+        document.write(`Seu nome em Maiúsculas: <strong>${nome.toUpperCase()}</strong><br>`)
+        document.write(`Seu nome em Minúsculas: <strong>${nome.toLowerCase()}</strong>`)
+    </script>
+</body> 
+</html>

@@ -1,4 +1,4 @@
 # EcmaScript
 ### Curso Basico de EcamaScript
 * Cursando atualmente!
-* Aprendendo EcmaScript6
+* Aprendendo EcmaScript

@@ -1,6 +1,6 @@
 # **EcmaScript**
 
-### **Curso Basico de EcmaScript**
+### **Curso Basico de EcmaScript** :book:
 
 - Introdução
 - Cursando atualmente!

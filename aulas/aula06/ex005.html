@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeiros Passos com DOW!</title>
+        <style>
+            body{
+                background: rgb(16, 63, 138);
+                color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            h1{
+                color: #242424;
+                text-shadow: 2px 2px 3px hsla(0, 0%, 0%, 0.219);
+            }
+            p{
+                text-shadow: 2px 2px 3px hsla(0, 0%, 0%, 0.219);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Iniciando  estudos com DOW.</h1>
+        <p>Aqui o Resultado</p>
+        <p>Aprendendo a user o <strong>DOW</strong> em JavaScript</p>
+        <div id="msg">Click em Min</div>
+        <script>
+            var corpo = window.document.body
+            var p1 = window.document.getElementsByTagName('p')[1]
+            /* 
+            var d = window.document.getElementById('msg')
+            d.innerText = 'Uma mensagem foi alterada de outro modo ...'
+            d.style.color = 'yellow'
+            d.style.background = 'green'
+            */
+           var d = window.document.querySelector('div#msg')
+           d.style.color = 'blue'
+           d.style.background = 'red'
+        </script>
+    </body>
+</html>

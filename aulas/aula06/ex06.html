@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evendos DOW</title>
+    <style>
+        body{
+           background-image: linear-gradient(to right,rgb(219, 218, 218), rgb(212, 212, 212))
+        }
+        header h1{
+            text-align: center;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.219);
+            font: normal 2em 'sans-serif';
+        }
+        main #area{
+            background-color: darkgreen;
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            margin: auto;
+            cursor: pointer;
+            user-select: none;
+        }
+        main{
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.219);
+            padding-top: 5px;
+            font: italic bold 1.3em 'sans-serif';
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Area Interativa</h1>
+    </header>
+    <main>
+
+        <div id="area" onclick="clicar()" onmouseout="saiu()" onmousemove="entrou()" onmousedown="clicksegurado()" onmouseup="clicksouto()">
+            Interaja...
+        </div>
+        <script>
+           /*  function clicar(){
+                var area =  document.getElementById('area')
+                area.innerText = 'CLICOU'
+                area.style.backgroundColor = 'blue'
+            } */
+            function clicksegurado(){
+                area.style.backgroundColor = 'gray'
+                area.innerText = 'CLICK PRECIONADO!'
+            }
+            function clicksouto(){
+                area.style.backgroundColor = 'pink'
+                area.innerText = 'CLICK DEPRESSIONADO!'
+            }
+            function entrou(){
+                area.innerText = 'MOVENDO!'
+                area.style.backgroundColor = 'yellow'
+                area.style.color = 'black'
+            }
+            function saiu(){
+                area.innerText = 'SAIU!'
+                area.style.backgroundColor = 'red'
+            }
+        </script>
+    </main>
+</body>
+</html>

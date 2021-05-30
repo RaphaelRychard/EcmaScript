@@ -12,12 +12,36 @@
             <h1>Area Interativa</h1>
         </header>
         <main>
-            
-            <div id="area" onclick="clicar()" onmouseout="saiu()" onmousemove="entrou()" onmousedown="clicksegurado()" onmouseup="clicksouto()">
+            <div id="area">
                 Interaja...
-            </div>
-
-            <script src="script.js"></script>
+            </div>    
         </main>
+        <script>
+                area.addEventListener('mouseenter', entrou)
+    area.addEventListener('mouseout', saiu)
+    area.addEventListener('mousedown', clicksegurado)
+    area.addEventListener('mouseup', clicksouto)
+
+    function clicksegurado(){
+        area.style.backgroundColor = 'gray'
+        area.innerText = 'CLICK PRECIONADO!'
+    }
+
+    function clicksouto(){
+        area.style.backgroundColor = 'pink'
+        area.innerText = 'CLICK DEPRESSIONADO!'
+        
+    }
+
+    function entrou(){
+        area.innerText = 'MOVENDO!'
+        area.style.backgroundColor = 'yellow'
+        area.style.color = 'black'
+    }
+    function saiu(){
+        area.innerText = 'SAIU!'
+        area.style.backgroundColor = 'red'
+    }
+        </script>
     </body>
 </html>

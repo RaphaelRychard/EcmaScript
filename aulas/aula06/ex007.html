@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Somando Valores Menores que 100</h1>
+    </header>
+    <main>
+        <div id="contesto">
+            <section>
+                <input type="number" name="txt1" id="txt1">+
+                <input type="number" name="txt2" id="txt2">
+            </section>
+            <article>
+                <input type="button" value="Somar" id="soma" onclick="somar()">
+            </section>
+            
+        </div>
+        <div id="res">
+            Analisando .......
+        </div>
+    </main>
+    <script> 
+        function somar() {
+            var tn1 = document.getElementById('txt1')
+            var tn2 = document.getElementById('txt2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+            if((n1 < 100) && (n2 < 100)){
+                res.innerHTML = `A soma entre <strong>${n1}</strong> e <strong>${n2}</strong> é igual a <strong>${soma}</strong>`
+            }else{
+                alert('Erro')
+                res.innerHTML = 'Erro!'
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+body{
+    background-color: steelblue;
+    font: normal 1em sans-serif;
+ 
+}
+
+/* HEADER */
+header{
+    text-align: center;
+}
+header > h1{
+    color: white;
+    text-shadow: 1px 1px 3px #00000073;
+}
+
+/* MAIN */
+main{
+    max-width: 600px;
+    margin: auto;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 3px 3px 5px #0000002d;
+    
+}
+div{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#msg{
+    font-size: 1.3em;
+    text-shadow: 1px 1px 2px #00000035;
+    font-weight: bold;
+}
+
+main > section > .respostas{
+    color: black;
+    text-shadow: 1px 1px 3px #0000000a;
+}
+
+main > section .respostas{}
+
+/* FOOTER */
+footer{
+    text-align: center;
+}
+footer > p{
+    color: white;
+}

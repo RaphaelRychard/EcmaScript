@@ -9,26 +9,25 @@
     </head>
     <body>
         <header>
-            <h1>Titulo</h1>
+            <h1>Verificado de Idade</h1>
         </header>
         <main>
 
             <section class="informacao">
                 <div class="anoNass">
                     <p>Ano de nacimento:
-                         <input class="anoNac" type="number" name="validaçãodeAno" id="validaçãodeAno">
+                         <input class="anoNac" type="number" name="validaçãodeAno" id="validaçãodeAno" min="0">
                     </p>
                     <p>Sexo:
-                        <input type="radio" name="redsex" id="mas">
+                        <input type="radio" name="redSex" id="mas" checked>
                         <label for="mas"> Masculino</label>
-                        <input type="radio" name="redsex" id="fem">
-                        <label for="Fem"> Feminino</label>
+                        <input type="radio" name="redSex" id="fem">
+                        <label for="fem"> Feminino</label>
                     </p>
-                    <input class="verif" type="button" value="Verificar">
+                    <input class="verif" type="button" value="Verificar" onclick="verificar()">
 
-                   
                 </div>
-                <div class="respostas">
+                <div id="respostas">
                     Prencha os dados acima e aguarde o seus resultados...
                 </div>
             </section>

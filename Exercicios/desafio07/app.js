@@ -3,6 +3,7 @@ var doalReal = Number(prompt('Antes de mais nada quantos está do doloar agora? 
 function converter () {
 
     var resultado = document.querySelector('article.resultado')
+    resultado.innerHTML = ''
     var SobraReal = Number(prompt('Quantos R$ tem na carteira? '))
 
     var Covdolar = SobraReal / doalReal

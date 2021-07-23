@@ -12,7 +12,7 @@ function reajuste () {
 
     resultado.innerHTML += `<p>O salário atual era de ${salario.toLocaleString('pt-br', {style:'currency', currency: 'BRL'})}.</p>`
     
-    resultado.innerHTML += `<p>Com o aumento de ${Reajuste}%, o salário vai aumentar ${CalRejuste.toLocaleString('pt-br', {style:'currency', currency: 'BRL'})} no próximo mês.</p>`
+    resultado.innerHTML += `<p>Com o aumento de ${Reajuste}%, o salário vai aumentar para ${CalRejuste.toLocaleString('pt-br', {style:'currency', currency: 'BRL'})} no próximo mês.</p>`
     
     resultado.innerHTML += `<p>E a partir daí, ${nomeFuncionario} vai passar a ganhar ${CalSalario.toLocaleString('pt-bt', {style:'currency', currency: 'BRL'})}.</p>`
 

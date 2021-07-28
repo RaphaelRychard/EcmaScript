@@ -48,7 +48,7 @@ main .resultado p{
     margin: 10px 5px;
     
 }
-main article.resultado strong{
+main .resultado strong{
     color: hsl(0, 0%, 21%);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.13);
     font-size: 1.2em;
@@ -66,6 +66,9 @@ main > article input:hover{
     background-color: royalblue;
     transition: .5s;
     color: white;
+}
+main strong { 
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.295);
 }
 footer{
     text-align: center;
